@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.MainActivity">
+    <include layout="@layout/nav_bar"
+        android:id="@+id/nav"> </include>
+
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_home"
+            android:text="@string/tab_menu_home" />
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_find"
+            android:text="@string/tab_menu_find" />
+
+        <RadioButton
+            android:id="@+id/rb_rank"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_rank"
+            android:text="@string/tab_menu_rank" />
+
+        <RadioButton
+            android:id="@+id/rb_my_game"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_my_game"
+            android:text="@string/tab_menu_my_game"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/lineColor" />
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/nav"
+      > </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/mainColorH</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+
+
+    </style>
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">10sp</item>"
+    </style>
+    <style name="line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/lineColor</item>
+        <item name="android:layout_margin">@dimen/maginSize</item>
+    </style>
+    <style name="commitBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/titleSize</item>
+        <item name="android:layout_marginLeft">@dimen/maginSize</item>
+        <item name="android:layout_marginRight">@dimen/maginSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_commit_select</item>
+    </style>
+    <style name="AnimationActivity" parent="android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation"> @anim/open_enter </item>
+        <item name="android:activityOpenExitAnimation"> @anim/open_exit</item>
+        <item name="android:activityCloseEnterAnimation"> @anim/close_enter  </item>
+        <item name="android:activityCloseExitAnimation"> @anim/close_exit</item>
+    </style>
+
+</resources>

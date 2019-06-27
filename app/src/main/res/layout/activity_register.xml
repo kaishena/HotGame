@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity">
+    <include layout="@layout/nav_bar">
+
+    </include>
+ >
+    <com.example.hotgame.view.InputView
+        android:id="@+id/input_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHight"
+        android:layout_marginTop="@dimen/maginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="请输入账号 "
+        app:is_password="false"
+        >
+
+    </com.example.hotgame.view.InputView>
+    <View
+        style="@style/line">
+
+    </View>
+    <com.example.hotgame.view.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="请输入密码"
+        app:is_password="true"
+        >
+
+    </com.example.hotgame.view.InputView>
+    <View
+        style="@style/line">
+
+    </View>
+    <com.example.hotgame.view.InputView
+        android:id="@+id/input_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHight"
+
+        app:input_icon="@mipmap/password"
+        app:input_hint="请确认密码"
+        app:is_password="true"
+        >
+
+    </com.example.hotgame.view.InputView>
+    <View
+        style="@style/line">
+
+    </View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/maginSize"
+        android:layout_gravity="center_horizontal"
+        android:text="已有账号？去登录>"
+        android:textSize="14sp"
+        android:textColor="@color/mainColor"
+        android:onClick="onLoginClick"/>
+
+    <Button
+
+        style="@style/commitBtn"
+        android:text="注  册"
+        android:layout_marginTop="@dimen/maginSize"
+        android:onClick="onCommit"
+        />
+
+</LinearLayout>
